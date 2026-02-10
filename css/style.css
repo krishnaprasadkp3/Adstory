@@ -702,3 +702,249 @@ footer a:hover {
 .border-top {
     border-color: #f0f0f0 !important;
 }
+
+/* Footer Utilities */
+.hover-primary {
+    transition: color 0.2s ease;
+}
+
+.hover-primary:hover {
+    color: var(--primary-color) !important;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   Process / How We Work Section
+   ========================================= */
+
+.process-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary-color);
+}
+
+/* Step Numbers */
+.process-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.03);
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.process-card:hover .process-number {
+    color: rgba(222, 86, 50, 0.1);
+}
+
+/* Process Icon Boxes */
+.process-icon-box {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.process-card:hover .process-icon-box {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Connector Lines Between Steps */
+.process-connector {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, rgba(222, 86, 50, 0.3), rgba(222, 86, 50, 0.1));
+    transform: translateY(-50%);
+}
+
+.process-connector::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid rgba(222, 86, 50, 0.3);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .process-card {
+        margin-bottom: 20px;
+    }
+
+    .process-number {
+        font-size: 2rem;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+/* =========================================
+   What We Offer Section - Modern Minimal
+   ========================================= */
+
+#offer {
+    border-top: 1px solid var(--border-color);
+}
+
+.offer-feature-card-minimal {
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.offer-feature-card-minimal:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.offer-icon-minimal {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* CRM Animation Wrapper */
+.crm-animation-wrapper {
+    position: relative;
+    padding: 40px;
+}
+
+.crm-animation-card {
+    background: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.02);
+}
+
+.animation-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+}
+
+.dot-red,
+.dot-yellow,
+.dot-green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-red {
+    background: #ff5f56;
+}
+
+.dot-yellow {
+    background: #ffbd2e;
+}
+
+.dot-green {
+    background: #27c93f;
+}
+
+.animation-stats-card {
+    bottom: 0;
+    left: 0;
+    min-width: 220px;
+    z-index: 10;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9) !important;
+    animation: statsPopUp 1s ease-out forwards 1s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes statsPopUp {
+    to {
+        opacity: 1;
+        transform: translateY(-20px) translateX(20px);
+    }
+}
+
+.stats-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* SVG Elements Animation */
+.anim-lead-card-1 {
+    animation: cardFloat 4s ease-in-out infinite;
+}
+
+.anim-lead-card-2 {
+    animation: cardFloat 4s ease-in-out infinite 2s;
+}
+
+@keyframes cardFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float-source-1 {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-source-2 {
+    animation: float 6s ease-in-out infinite 2s;
+}
+
+.float-source-3 {
+    animation: float 6s ease-in-out infinite 4s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .crm-animation-wrapper {
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+}
