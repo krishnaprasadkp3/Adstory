@@ -805,25 +805,23 @@ footer a:hover {
 }
 
 /* =========================================
-   What We Offer Section - Modern Minimal
+   What We Offer Section - Orange Refinement
    ========================================= */
 
-#offer {
-    border-top: 1px solid var(--border-color);
-}
-
-.offer-feature-card-minimal {
-    padding: 30px;
+.offer-feature-card-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 25px;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.offer-feature-card-minimal:hover {
-    transform: translateX(10px);
-    border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+.offer-feature-card-glass:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .offer-icon-minimal {
@@ -840,7 +838,7 @@ footer a:hover {
 /* CRM Animation Wrapper */
 .crm-animation-wrapper {
     position: relative;
-    padding: 40px;
+    padding: 20px;
 }
 
 .crm-animation-card {
@@ -941,10 +939,64 @@ footer a:hover {
     animation: float 6s ease-in-out infinite 4s;
 }
 
+.crm-node {
+    animation: crmPulse 4s ease-in-out infinite;
+}
+
+@keyframes crmPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.source-node-inner {
+    animation: sourceHover 5s ease-in-out infinite;
+}
+
+@keyframes sourceHover {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Base animation delays */
+.source-node:nth-child(2) .source-node-inner {
+    animation-delay: 0s;
+}
+
+.source-node:nth-child(3) .source-node-inner {
+    animation-delay: 1s;
+}
+
+.source-node:nth-child(4) .source-node-inner {
+    animation-delay: 2s;
+}
+
+.source-node:nth-child(5) .source-node-inner {
+    animation-delay: 3s;
+}
+
+/* SVG Typography */
+.source-node text {
+    font-family: inherit;
+    letter-spacing: 0.5px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 991px) {
     .crm-animation-wrapper {
-        padding: 20px 0;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 }
