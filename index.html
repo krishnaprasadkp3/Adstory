@@ -21,6 +21,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -174,35 +177,81 @@
     <!-- Metrics Section (Results) -->
     <section id="results" class="py-100 bg-light-alt">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 mb-3">Real Results, Repeatable Growth</h2>
-                <p class="lead text-muted mx-auto" style="max-width: 600px;">
-                    We don't just hit goals—we shatter them. Here is what we have achieved for our partners.
-                </p>
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-8">
+                    <span class="badge bg-secondary text-white mb-3 px-3 py-2 rounded-pill fw-bold small">CASE
+                        STUDIES</span>
+                    <h2 class="display-4 fw-bold mb-3">Real Results, Repeatable Growth</h2>
+                    <p class="lead text-muted" style="max-width: 600px;">
+                        We don't just hit goals—we shatter them. See how we help ambitious brands scale.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-outline-dark rounded-pill px-4">View All Case Studies</a>
+                </div>
             </div>
+
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="metric-card text-center">
-                        <div class="metric-value">56%</div>
-                        <div class="metric-label">Increase in Signs-ups</div>
-                        <p class="text-muted mt-3 small">Optimized paid search and social campaigns for leading SaaS
-                            client.</p>
+                <!-- Case Study 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card h-100">
+                        <div class="card-body p-4 d-flex flex-column h-100">
+                            <div class="mb-4">
+                                <span class="badge bg-light text-dark border">SaaS GROWTH</span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-4">Scaling TechGrowth's user base through paid acquisition</h3>
+                            <div class="mt-auto">
+                                <div class="display-3 fw-bold text-primary mb-2">56%</div>
+                                <p class="text-muted fw-bold">Increase in Sign-ups</p>
+                                <div class="border-top pt-3 mt-3">
+                                    <a href="#" class="text-decoration-none fw-bold text-dark stretched-link">
+                                        Read Case Study <i class="ph ph-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="metric-card text-center">
-                        <div class="metric-value">243%</div>
-                        <div class="metric-label">Growth in Leads</div>
-                        <p class="text-muted mt-3 small">Scaled acquisition through multi-channel performance strategy.
-                        </p>
+
+                <!-- Case Study 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card h-100">
+                        <div class="card-body p-4 d-flex flex-column h-100">
+                            <div class="mb-4">
+                                <span class="badge bg-light text-dark border">LEAD GEN</span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-4">Multi-channel strategy for high-ticket B2B sales</h3>
+                            <div class="mt-auto">
+                                <div class="display-3 fw-bold text-primary mb-2">243%</div>
+                                <p class="text-muted fw-bold">Growth in Qualified Leads</p>
+                                <div class="border-top pt-3 mt-3">
+                                    <a href="#" class="text-decoration-none fw-bold text-dark stretched-link">
+                                        Read Case Study <i class="ph ph-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="metric-card text-center">
-                        <div class="metric-value">42%</div>
-                        <div class="metric-label">Decrease in CPA</div>
-                        <p class="text-muted mt-3 small">Refined targeting and creative assets to maximize budget
-                            efficiency.</p>
+
+                <!-- Case Study 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-study-card h-100">
+                        <div class="card-body p-4 d-flex flex-column h-100">
+                            <div class="mb-4">
+                                <span class="badge bg-light text-dark border">ECOMMERCE</span>
+                            </div>
+                            <h3 class="h4 fw-bold mb-4">Maximizing ROAS for a sustainable fashion brand</h3>
+                            <div class="mt-auto">
+                                <div class="display-3 fw-bold text-primary mb-2">-42%</div>
+                                <p class="text-muted fw-bold">Decrease in CPA</p>
+                                <div class="border-top pt-3 mt-3">
+                                    <a href="#" class="text-decoration-none fw-bold text-dark stretched-link">
+                                        Read Case Study <i class="ph ph-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,61 +259,68 @@
     </section>
 
     <!-- Services / Why Us -->
-    <section id="services" class="py-100">
-        <div class="container">
+    <section id="services" class="py-100 position-relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="position-absolute top-0 end-0 p-5 opacity-10">
+            <i class="ph ph-squares-four display-1 text-primary"></i>
+        </div>
+
+        <div class="container position-relative z-1">
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-lg-5">
-                    <h2 class="display-5 mb-4">Master the Digital Game</h2>
-                    <p class="text-muted mb-4">
+                    <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-bold small">WHAT WE
+                        DO</span>
+                    <h2 class="display-4 fw-bold mb-4">Master the Digital Game</h2>
+                    <p class="lead text-muted mb-5">
                         Comprehensive digital solutions tailored to your unique business needs. We bridge the gap
                         between creative storytelling and analytical performance.
                     </p>
-                    <a href="#contact" class="btn btn-outline-dark rounded-pill">Start Your Growth Engine</a>
+                    <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg">Start Your Growth</a>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
                         <!-- Service 1 -->
                         <div class="col-md-6">
-                            <div class="feature-card h-100">
-                                <div class="feature-icon">
-                                    <i class="fas fa-bullhorn"></i>
+                            <div class="service-card-modern p-4 h-100">
+                                <div class="icon-box-modern mb-4 bg-primary-subtle text-primary">
+                                    <i class="ph ph-rocket-launch display-6"></i>
                                 </div>
-                                <h5>Performance Marketing</h5>
-                                <p class="text-muted small mb-0">Get seen, recognized, and remembered by your audience
-                                    through strategic branding that reflects your values and builds trust.</p>
+                                <h4 class="h5 fw-bold mb-3">Performance Marketing</h4>
+                                <p class="text-muted small mb-0">Get seen and recognized by your audience through
+                                    strategic campaigns that drive real quantifiable results.</p>
                             </div>
                         </div>
                         <!-- Service 2 -->
                         <div class="col-md-6">
-                            <div class="feature-card h-100">
-                                <div class="feature-icon">
-                                    <i class="fas fa-layer-group"></i>
+                            <div class="service-card-modern p-4 h-100">
+                                <div class="icon-box-modern mb-4 bg-success-subtle text-success">
+                                    <i class="ph ph-palette display-6"></i>
                                 </div>
-                                <h5>Branding</h5>
-                                <p class="text-muted small mb-0">Our team of in-house brand designers creates visuals
-                                    that resonate with your brand’s values.</p>
+                                <h4 class="h5 fw-bold mb-3">Branding & Identity</h4>
+                                <p class="text-muted small mb-0">Our team creates cohesive visual identities that
+                                    resonate with your core values and build lasting trust.</p>
                             </div>
                         </div>
                         <!-- Service 3 -->
                         <div class="col-md-6">
-                            <div class="feature-card h-100">
-                                <div class="feature-icon">
-                                    <i class="fas fa-search"></i>
+                            <div class="service-card-modern p-4 h-100">
+                                <div class="icon-box-modern mb-4 bg-warning-subtle text-warning">
+                                    <i class="ph ph-magnifying-glass display-6"></i>
                                 </div>
-                                <h5>SEO Optimization</h5>
-                                <p class="text-muted small mb-0">Improve search visibility, attract high-intent traffic,
-                                    and grow sustainably with SEO strategies built for long-term rankings.</p>
+                                <h4 class="h5 fw-bold mb-3">SEO Optimization</h4>
+                                <p class="text-muted small mb-0">Improve visibility and attract high-intent traffic with
+                                    strategies built for sustainable long-term rankings.</p>
                             </div>
                         </div>
                         <!-- Service 4 -->
                         <div class="col-md-6">
-                            <div class="feature-card h-100">
-                                <div class="feature-icon">
-                                    <i class="fas fa-pen-fancy"></i>
+                            <div class="service-card-modern p-4 h-100">
+                                <div class="icon-box-modern mb-4 bg-info-subtle text-info">
+                                    <i class="ph ph-pen-nib display-6"></i>
                                 </div>
-                                <h5>Content Creation</h5>
-                                <p class="text-muted small mb-0">Bring your ideas to life with high-quality content that
-                                    captures attention, communicates clearly, and supports your marketing goals.</p>
+                                <h4 class="h5 fw-bold mb-3">Content Creation</h4>
+                                <p class="text-muted small mb-0">Bring ideas to life with high-quality content that
+                                    captures attention and communicates your message clearly.</p>
                             </div>
                         </div>
                     </div>
@@ -272,35 +328,40 @@
             </div>
 
             <!-- Additional Services Row -->
-            <div class="row g-4">
+            <div class="row g-4 mt-2">
                 <div class="col-md-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
+                    <div class="service-card-modern p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon-box-small bg-danger-subtle text-danger">
+                                <i class="ph ph-broadcast"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Digital Marketing</h5>
                         </div>
-                        <h5>Digital Marketing</h5>
-                        <p class="text-muted small mb-0">Increase visibility, reach the right audience, and drive
-                            meaningful engagement through result-focused digital marketing strategies.</p>
+                        <p class="text-muted small mb-0">Full-funnel strategies to reach the right audience at the right
+                            time.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-code"></i>
+                    <div class="service-card-modern p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon-box-small bg-indigo-subtle text-indigo">
+                                <i class="ph ph-desktop"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Web Development</h5>
                         </div>
-                        <h5>Website Design & Development</h5>
-                        <p class="text-muted small mb-0">Deliver a seamless user experience with websites designed to
-                            look great, perform efficiently, and support business growth.</p>
+                        <p class="text-muted small mb-0">Seamless, performant websites designed for conversion and
+                            growth.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card h-100">
-                        <div class="feature-icon">
-                            <i class="fas fa-video"></i>
+                    <div class="service-card-modern p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon-box-small bg-pink-subtle text-pink">
+                                <i class="ph ph-film-strip"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Motion Graphics</h5>
                         </div>
-                        <h5>Motion Graphics Video</h5>
-                        <p class="text-muted small mb-0">Simplify messages and strengthen storytelling with motion
-                            graphics videos that engage, explain, and enhance brand recall.</p>
+                        <p class="text-muted small mb-0">Dynamic video content that explains and engages instantly.</p>
                     </div>
                 </div>
             </div>
