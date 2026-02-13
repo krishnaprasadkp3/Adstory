@@ -537,20 +537,29 @@ footer a:hover {
 
 .logo-track {
     display: inline-flex;
-    animation: scroll 30s linear infinite;
-    gap: 80px;
+    animation: scroll 40s linear infinite;
+    /* Slower scroll for larger logos */
+    gap: 100px;
     /* Space between logos */
-    padding-left: 80px;
+    padding-left: 100px;
     /* Initial offset */
 }
 
 .logo-track img {
-    height: 40px;
+    height: 80px;
     width: auto;
     filter: grayscale(100%);
-    opacity: 0.5;
+    opacity: 0.8;
+    /* Increased opacity for better visibility */
     transition: all 0.3s ease;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logo-track img {
+        height: 50px;
+        /* Smaller on mobile */
+    }
 }
 
 .logo-track img:hover {
