@@ -72,4 +72,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         observer.observe(el);
     });
+
+    // Mobile Menu Close on Click
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    document.addEventListener('click', (e) => {
+        if (!navbarCollapse.contains(e.target) && !navbarToggler.contains(e.target) && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: true
+            });
+        }
+    });
+
+    // Scroll Triggered Popup
+    const popup = document.getElementById('contactPopup');
+    const closeBtn = document.getElementById('closePopup');
+    let popupShown = false;
+
+    if (popup && closeBtn) {
+        window.addEventListener('scroll', () => {
+            if (popupShown) return;
+
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            if (scrollPercent > 40) {
+                popup.classList.add('active');
+                popupShown = true;
+            }
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.classList.remove('active');
+        });
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.remove('active');
+            }
+        });
+    }
 });
